@@ -142,7 +142,7 @@
               </h2>
               
               <div class="article-information">
-                <time class="article-date">10 июня 2019</time>
+                <time class="article-date" datetime="2019-06-10">10 июня 2019</time>
                 <cite class="article-author">Неизвестный автор</cite>
               </div>
               
@@ -180,7 +180,7 @@
               </h2>
               
               <div class="article-information">
-                <time class="article-date">10 июня 2019</time>
+                <time class="article-date" datetime="2019-06-10">10 июня 2019</time>
                 <cite class="article-author">Неизвестный автор</cite>
               </div>
               
@@ -215,7 +215,7 @@
               </h2>
               
               <div class="article-information">
-                <time class="article-date">10 июня 2019</time>
+                <time class="article-date" datetime="2019-06-10">10 июня 2019</time>
                 <cite class="article-author">Неизвестный автор</cite>
               </div>
               
@@ -254,7 +254,7 @@
               </h2>
               
               <div class="article-information">
-                <time class="article-date">10 июня 2019</time>
+                <time class="article-date" datetime="2019-06-10">10 июня 2019</time>
                 <cite class="article-author">Неизвестный автор</cite>
               </div>
               
@@ -295,7 +295,7 @@
               </h2>
               
               <div class="article-information">
-                <time class="article-date">10 июня 2019</time>
+                <time class="article-date" datetime="2019-06-10">10 июня 2019</time>
                 <cite class="article-author">Неизвестный автор</cite>
               </div>
               
@@ -325,7 +325,7 @@
             </div>
           
             <div class="article-news-content">
-              <time class="article-news-date">14 июня 2019</time>
+              <time class="article-news-date" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="article-news-title">
                 <a href="#0" class="article-news-link">10 мест, ради которых стоит проснуться</a>
               </h3>
@@ -340,7 +340,7 @@
             </div>
           
             <div class="article-news-content">
-              <time class="article-news-date">14 июня 2019</time>
+              <time class="article-news-date" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="article-news-title">
                 <a href="#0" class="article-news-link">Йога для домашних</a>
               </h3>
@@ -355,7 +355,7 @@
             </div>
           
             <div class="article-news-content">
-              <time class="article-news-date">14 июня 2019</time>
+              <time class="article-news-date" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="article-news-title">
                 <a href="#0" class="article-news-link">Как мы превратили классное место в балкон</a>
               </h3>
@@ -370,7 +370,7 @@
             </div>
           
             <div class="article-news-content">
-              <time class="article-news-date">14 июня 2019</time>
+              <time class="article-news-date" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="article-news-title">
                 <a href="#0" class="article-news-link">Кулинарный подход к науке</a>
               </h3>
@@ -385,7 +385,7 @@
             </div>
           
             <div class="article-news-content">
-              <time class="article-news-date">14 июня 2019</time>
+              <time class="article-news-date" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="article-news-title">
                 <a href="#0" class="article-news-link">Лучшие прически для распущенных волос</a>
               </h3>
@@ -395,7 +395,7 @@
        
         </section>
         
-        <section>
+        <div>
           <form class="form-search">
             <label for="search" class="visually-hidden">Текст</label>
             <input class="field-search" type="search" id="search" placeholder="Найти...">
@@ -403,7 +403,7 @@
               <span class="visually-hidden">Отправить форму поиска</span>
             </button>
           </form>
-        </section>
+        </div>
         
         <section>
           <h3 class="newsletter-title"> <a href="#0">Рассылка</a></h3>
@@ -429,7 +429,7 @@
         </section>
         
         <section>
-          <h3 class="newsletter-title"> <a href="#0">Темы</a></h3>
+          <h3 class="topics-title"> <a href="#0">Темы</a></h3>
           <div class="topics">
             <div class="topics-subject"> <a href="#0">Красота<span class="superscript">12</span></a></div>
             <div class="topics-subject"> <a href="#0">Здоровье<span class="superscript">4</span></a></div>
@@ -447,9 +447,11 @@
 
     <section class="products">
       <div class="card">
-        <div class="card-picture">
+        <picture class="card-picture">
+          <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px)">
           <img src="images/shop-item-desk1.jpg" alt="Подушка">
-        </div>
+        </picture>
         <div class="card-content">
           <h2 class="card-title">подушки на диван</h2>
           <div class="article-text">
@@ -466,9 +468,11 @@
       </div>
     
       <div class="card">
-        <div class="card-picture">
+        <picture class="card-picture">
+          <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px)">
           <img src="images/shop-item-desk2.jpg" alt="Кукла">
-        </div>
+        </picture>
         <div class="card-content">
           <h2 class="card-title">кукла "зайчик"</h2>
           <div class="article-text">
@@ -484,9 +488,11 @@
       </div>
 
       <div class="card">
-        <div class="card-picture">
+        <picture class="card-picture">
+          <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+          <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px)">
           <img src="images/shop-item-desk3.jpg" alt="Рамка">
-        </div>
+        </picture>
         <div class="card-content">
           <h2 class="card-title">шестиугольная рамка</h2>
           <div class="article-text">
@@ -505,7 +511,7 @@
     </section>
       
     <footer>
-      <adress class="articles-socials">
+      <div class="articles-socials">
         <ul class="socials">
           <li class="socials-item">
             <a href="#0" class="socials-link socials-link-dribbble">
@@ -523,7 +529,7 @@
             </a>              
           </li>
         </ul>
-      </adress>
+      </div>
         
       <a href="#0" class="footer">Copyright © 2009–2019 City Blog</a>
     </footer>
@@ -532,7 +538,7 @@
     <section class="pop-up">
       <div class="pop-up-content">
         <img src="svg/form-x.svg" class="pop-up-close" alt="">
-        <h2 class="products-title">ваш фидбек</h2>
+        <h2 class="pop-up-title">ваш фидбек</h2>
         <div class="pop-up-questions">
           <span class="pop-up-text">Вы часто заходите на сайт?</span>
           <select class="list">
