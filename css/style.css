@@ -348,7 +348,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 } 
-  
+
 .form-search {
   vertical-align: top;
   display: flex;
@@ -532,7 +532,7 @@ a {
 }
 
 .card-picture {
-  max-width: 290px;
+  width: 100%;
   margin-left: 20px;
   z-index: 1;
 }
@@ -656,6 +656,17 @@ a {
 
 
 /*pop-up*/
+._hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+
 .pop-up {
   position: fixed;
   z-index: 3;
@@ -737,6 +748,9 @@ a {
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 98% 50%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .list:hover {
@@ -750,6 +764,12 @@ a {
 
 .radio-button-control {
   display: none;
+}
+
+.radio-button-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .radio-button-text::before {
@@ -776,6 +796,9 @@ a {
   padding: 18px;
   margin-top: 10px;
   background-color: #f3f7f5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .review-field:hover {
