@@ -564,6 +564,10 @@ a {
   color: #b59f5b;
 }
 
+.card-word-link:hover {
+  text-decoration: underline;
+}
+
 .price-shop {
   display: flex;
   justify-content: space-between;
@@ -598,7 +602,7 @@ a {
 }
   
 .button-shop:hover {
-  border: 2px solid #b59f5b;
+  background-color: #000000;
 }
 
 
