@@ -51,7 +51,7 @@ a {
 .menu {
   display: flex;
   justify-content:space-between;
-  max-width: 1200px;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -61,7 +61,7 @@ a {
   z-index: 2;
   align-items: center;
   display: flex;
-  gap: 40px;
+  gap: 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -235,7 +235,7 @@ a {
   
 .article-header-title {
   padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -251,7 +251,7 @@ a {
 .article-information {
   display: flex;
   gap: 15px;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
@@ -299,26 +299,28 @@ a {
   display: block;
   width: 65px;
   border-bottom: 3px solid #b59f5b;
-  margin: 10px auto 28px auto;
+  margin: 10px auto 25px auto;
 }
   
 .article-news {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
   
 .article-news-picture {
   max-width: 70px;
   height: 70px;
   margin-right: 20px;
+  margin-left: -5px;
 }
   
 .article-news-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
   
 .article-news-date {
-  margin-bottom: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -386,7 +388,7 @@ a {
   
 .newsletter-title {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 59px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -419,7 +421,7 @@ a {
   text-align: center;
   width: 100%;
   height: 45px;
-  margin-top: 15px;
+  margin-top: 19px;
   border: 0px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -440,6 +442,24 @@ a {
   gap: 5px;
 }
   
+.tags-title {
+  text-align: center;
+  margin-top: 59px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+  
+.tags-title::after {
+  content: "";
+  display: block;
+  width: 65px;
+  border-bottom: 3px solid #b59f5b;
+  margin: 15px auto 22px auto;
+}
+
 .tags-subject {
   text-align: center;
   box-sizing: border-box;
