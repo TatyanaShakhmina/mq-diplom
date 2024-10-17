@@ -85,25 +85,25 @@ a {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 700px;
+  max-width: 720px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 100px;
-  padding-bottom: 130px;
+  padding-bottom: 124px;
   font-family: "Open Sans", sans-serif;
-  font-size: 45px;
+  font-size: 44px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #ffffff;
 }
   
 /*trends*/
 .trends-title {
   text-align: center;
-  padding-top: 55px;
+  padding-top: 58px;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -168,8 +168,8 @@ a {
   z-index: 2;
   box-sizing: border-box;
   border: 2px solid #b59f5b;
-  padding: 40px 33px 36px 33px;
-  margin: 130px 20px 10px 20px;
+  padding: 38px 33px 36px 33px;
+  margin: 140px 20px 20px 20px;
   width: calc(100% - 44px);
 }
 
@@ -220,7 +220,7 @@ a {
   
 .tag-list {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -234,7 +234,7 @@ a {
 }
   
 .article-header-title {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
