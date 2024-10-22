@@ -587,17 +587,14 @@ a {
   font-weight: normal;
   line-height: 1.47;
   color: #0f0d0e;
-  white-space: nowrap;
 }
 
 .card-text-link:hover {
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .card-word-link {
   color: #b59f5b;
-  white-space: nowrap;
 }
 
 .card-word-link:hover {
