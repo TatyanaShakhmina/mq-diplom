@@ -81,6 +81,10 @@ a {
   text-decoration: none;
 }
   
+.burger {
+  display: none;
+}
+
 .title {
   position: relative;
   z-index: 2;
@@ -861,6 +865,22 @@ a {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
+  .menu-logo {
+    width: 160px;
+    padding-top: 10px;
+    padding-left: 35px;
+  }
+
+  .title {
+    max-width: 636px;
+    padding-top: 90px;
+    padding-bottom: 112px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 1.375;
+  }
+
+
   .products {
     flex-wrap: wrap;
   }
@@ -875,6 +895,10 @@ a {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
+  .menu-list {
+    display: none;
+  }
+
   .trends {
     flex-wrap: wrap;
   }
