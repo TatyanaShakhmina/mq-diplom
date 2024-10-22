@@ -276,7 +276,7 @@ a {
 }
 
 .article-text-paragraph {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 /*aside*/
@@ -572,7 +572,7 @@ a {
 
 .card-title {
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -581,12 +581,23 @@ a {
   color: #0f0d0e;
 }
 
+.card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.47;
+  color: #0f0d0e;
+  white-space: nowrap;
+}
+
 .card-text-link:hover {
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .card-word-link {
   color: #b59f5b;
+  white-space: nowrap;
 }
 
 .card-word-link:hover {
