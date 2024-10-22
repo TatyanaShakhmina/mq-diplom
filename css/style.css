@@ -274,7 +274,11 @@ a {
   line-height: 1.47;
   color: #0f0d0e;
 }
-  
+
+.article-text-paragraph {
+  margin-bottom: 5px;
+}
+
 /*aside*/
 .aside {
   width: 270px;
