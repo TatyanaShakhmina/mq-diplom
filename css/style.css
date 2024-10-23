@@ -933,8 +933,57 @@ a {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
+  .menu {
+    max-width: 695px;
+  }
+
+  .menu-logo {
+    width: 160px;
+  }
+
   .menu-list {
     display: none;
+  }
+
+  .menu-burger {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 20px;
+  }
+
+  .menu-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before, .menu-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
+  }
+
+  .title {
+    max-width: 636px;
+    padding-top: 90px;
+    padding-bottom: 112px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 1.375;
   }
 
   .trends {
