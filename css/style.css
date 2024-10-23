@@ -608,7 +608,7 @@ a {
 .price-shop {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 20px;
 }
 
@@ -627,8 +627,8 @@ a {
 
 .button-shop {
   text-align: center;
-  width: 45%;
-  height: 45px;
+  width: 49%;
+  height: 48px;
   border: 0px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -918,7 +918,6 @@ a {
     max-width: 636px;
     padding-top: 90px;
     padding-bottom: 112px;
-    font-family: "Open Sans", sans-serif;
     font-size: 40px;
     line-height: 1.375;
   }
@@ -933,21 +932,99 @@ a {
   }
 
   /*middle*/
+  .page {
+    max-width: 695px;
+    padding-top: 50px;
+    gap: 35px;
+  }
+
 
   /*main*/
+  
+  .article {
+    flex-direction: column;
+    padding-bottom: 41px;
+  }
+  
+  .article:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 4px solid #ededed;
+    margin-bottom: 0px;
+  }
+
+  .article-picture {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 12px;
+  }
+    
+  .article-content {
+    width: 100%;
+    margin-right: 0px;
+  }
+    
+  .article-header-title {
+    padding-top: 12px;
+    padding-bottom: 34px;
+    font-size: 17px;
+  }
+    
+  .article-information {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+    
+  .article-text {
+    padding-bottom: 15px;
+  }
+
 
   /*aside*/
 
+
   /*products*/
+  .products-title {
+    font-size: 18px;
+  }
+
+  .products-title::after {
+    margin: 10px auto 0px auto;
+  }
+
   .products {
     flex-wrap: wrap;
+    width: 90%;
   }
   
   .card {
-    width: 45%;
+    width: 48%;
+  }
+  
+  .card-picture {
+    width: 88%;
+    height: 225px;
+  }
+  
+  .card-content {
+    padding: 35px 20px 28px 20px;
+  }
+  
+  .card-title {
+    font-size: 17px;
   }
 
+
   /*footer*/
+  .articles-socials {
+    max-width: 699px;
+    margin-top: 50px;
+  }
+
+  .footer {
+    margin-top: 45px;
+  }
 }
 
 
@@ -1007,7 +1084,6 @@ a {
     max-width: 636px;
     padding-top: 90px;
     padding-bottom: 112px;
-    font-family: "Open Sans", sans-serif;
     font-size: 40px;
     line-height: 1.375;
   }
@@ -1045,6 +1121,7 @@ a {
   .page {
     max-width: 695px;
     padding-top: 50px;
+    gap: 35px;
   }
 
 
@@ -1052,9 +1129,7 @@ a {
   
   .article {
     flex-direction: column;
-    margin-right: 35px;
-    margin-left: 35px;
-    padding-bottom: 61px;
+    padding-bottom: 41px;
   }
   
   .article:not(:last-child)::after {
@@ -1068,7 +1143,7 @@ a {
   .article-picture {
     width: 100%;
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
     
   .article-content {
@@ -1078,29 +1153,30 @@ a {
     
   .article-header-title {
     padding-top: 12px;
-    padding-bottom: 40px;
+    padding-bottom: 34px;
     font-size: 17px;
   }
     
   .article-information {
     gap: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
     
   .article-text {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
 
   /*aside*/
-  .aside {
-    margin-right: 30px;
-  }
 
 
   /*products*/
   .products-title {
     font-size: 18px;
+  }
+
+  .products-title::after {
+    margin: 10px auto 0px auto;
   }
 
   .products {
@@ -1109,88 +1185,21 @@ a {
   }
   
   .card {
-    width: 45%;
+    width: 48%;
   }
   
   .card-picture {
-    width: 86%;
-    height: 205px;
-    margin-left: 20px;
-    z-index: 1;
+    width: 88%;
+    height: 225px;
   }
   
   .card-content {
-    margin-top: -35px;
-    border: 2px solid #b59f5b;
-    padding: 35px 20px 34px 20px;
-    z-index: 2;
-    flex-grow: 1;
+    padding: 35px 20px 28px 20px;
   }
   
   .card-title {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    color: #0f0d0e;
+    font-size: 17px;
   }
-  
-  .card-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.47;
-    color: #0f0d0e;
-  }
-  
-  .card-text-link:hover {
-    font-weight: bold;
-  }
-  
-  .card-word-link {
-    color: #b59f5b;
-  }
-  
-  .card-word-link:hover {
-    text-decoration: underline;
-  }
-  
-  .price-shop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .price {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #0f0d0e;
-  }
-  
-  .price-before {
-    font-size: 14px;
-    text-decoration: line-through;
-  }
-  
-  .button-shop {
-    text-align: center;
-    width: 45%;
-    height: 45px;
-    border: 0px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #b59f5b;
-  }
-  
 
 
   /*footer*/
@@ -1198,7 +1207,10 @@ a {
     max-width: 699px;
     margin-top: 50px;
   }
-  
+
+  .footer {
+    margin-top: 45px;
+  }
 }
 
 
@@ -1208,18 +1220,63 @@ a {
   .welcome {
     background-image: url("../images/banner-mobile.jpg");
   }
-  
+    
+  .menu {
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 11px;
+  }
+
+  .menu-logo {
+    width: 269px;
+  }
+
   .menu-list {
     display: none;
   }
 
-  .menu {
-    justify-content: center;
+  .menu-burger {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 20px;
+  }
+
+  .menu-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before, .menu-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
   }
 
   .title {
+    max-width: 636px;
+    padding-top: 90px;
+    padding-bottom: 112px;
     font-size: 26px;
+    line-height: 1.375;
   }
+
+
 
   /*trends*/
   .trends {
@@ -1271,17 +1328,63 @@ a {
     background-image: url("../images/banner-mobile.jpg");
   }
   
+  .menu {
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 11px;
+  }
+
+  .menu-logo {
+    width: 269px;
+  }
+
   .menu-list {
     display: none;
   }
 
-  .menu {
-    justify-content: center;
+  .menu-burger {
+    align-self: flex-end;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 20px;
+  }
+
+  .menu-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before, .menu-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
   }
 
   .title {
+    max-width: 277px;
+    padding-top: 45px;
+    padding-bottom: 220px;
     font-size: 26px;
+    line-height: 1.375;
   }
+
+
 
   /*trends*/
   .trends {
