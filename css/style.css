@@ -51,6 +51,7 @@ a {
 .menu {
   display: flex;
   justify-content:space-between;
+  align-items: center;
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
@@ -81,7 +82,7 @@ a {
   text-decoration: none;
 }
   
-.burger {
+.menu-burger {
   display: none;
 }
 
@@ -865,10 +866,48 @@ a {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
+  .menu {
+    max-width: 695px;
+  }
+
   .menu-logo {
     width: 160px;
-    padding-top: 10px;
-    padding-left: 35px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-burger {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 20px;
+  }
+
+  .menu-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before, .menu-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
   }
 
   .title {
@@ -879,7 +918,6 @@ a {
     font-size: 40px;
     line-height: 1.375;
   }
-
 
   .products {
     flex-wrap: wrap;
