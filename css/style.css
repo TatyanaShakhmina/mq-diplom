@@ -503,7 +503,6 @@ a {
   margin: 11px auto 27px auto;
 }
   
-  
 .topics-subject {
   border-bottom: 1px solid #ededed;
   padding-bottom: 14px;
@@ -861,13 +860,18 @@ a {
   background-color: #b59f5b;
 }
 
+
+
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+  
+  /*header*/
   .welcome {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
   .menu {
     max-width: 695px;
+    margin-top: 11px;
   }
 
   .menu-logo {
@@ -919,6 +923,22 @@ a {
     line-height: 1.375;
   }
 
+  /*trends*/
+  .trends-title {
+    padding-top: 45px;
+  }
+
+  .trends-title::after {
+    margin: 10px auto 19px auto;
+  }
+
+  /*middle*/
+
+  /*main*/
+
+  /*aside*/
+
+  /*products*/
   .products {
     flex-wrap: wrap;
   }
@@ -926,15 +946,21 @@ a {
   .card {
     width: 45%;
   }
+
+  /*footer*/
 }
 
+
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+  
+  /*header*/
   .welcome {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
   
   .menu {
     max-width: 695px;
+    margin-top: 11px;
   }
 
   .menu-logo {
@@ -986,14 +1012,37 @@ a {
     line-height: 1.375;
   }
 
+  /*trends*/
   .trends {
     flex-wrap: wrap;
   }
   
-  .trend {
-    width: calc(45% - 1.25px);
+  .trends-title {
+    padding-top: 45px;
   }
 
+  .trend {
+    width: 49.6%;
+    max-height: 245px;
+  }
+
+  .trend-frame {
+    padding: 38px 33px 36px 33px;
+    margin: 140px 20px 20px 20px;
+  }
+
+  .trends-text {
+    font-size: 17px;
+  }
+
+
+  /*middle*/
+
+  /*main*/
+
+  /*aside*/
+
+  /*products*/
   .products {
     flex-wrap: wrap;
   }
@@ -1001,9 +1050,14 @@ a {
   .card {
     width: 45%;
   }
+
+  /*footer*/
 }
 
+
 @media (max-width: 640px) and (orientation: landscape) {
+  
+  /*header*/
   .welcome {
     background-image: url("../images/banner-mobile.jpg");
   }
@@ -1020,6 +1074,7 @@ a {
     font-size: 26px;
   }
 
+  /*trends*/
   .trends {
     flex-wrap: wrap;
   }
@@ -1028,11 +1083,13 @@ a {
     width: calc(45% - 1.25px);
   }
 
+  /*middle*/
   .page {
     flex-direction: column;
     width: 95%;
   }
 
+  /*main*/
   .article {
     flex-direction: column;
   }
@@ -1045,6 +1102,9 @@ a {
     width: 100%;
   }
 
+  /*aside*/
+
+  /*products*/
   .products {
     flex-wrap: wrap;
   }
@@ -1052,9 +1112,14 @@ a {
   .card {
     width: 45%;
   }
+
+  /*footer*/
 }
 
+
 @media (max-width: 640px) and (orientation: portrait) {
+  
+  /*header*/
   .welcome {
     background-image: url("../images/banner-mobile.jpg");
   }
@@ -1071,6 +1136,7 @@ a {
     font-size: 26px;
   }
 
+  /*trends*/
   .trends {
     flex-direction: column;
   }
@@ -1079,11 +1145,13 @@ a {
     width: calc(100%);
   }
 
+  /*middle*/
   .page {
     flex-direction: column;
     width: 95%;
   }
 
+  /*main*/
   .article {
     flex-direction: column;
   }
@@ -1096,6 +1164,9 @@ a {
     width: 100%;
   }
 
+  /*aside*/
+
+  /*products*/
   .products {
     flex-direction: column;
   }
@@ -1103,4 +1174,6 @@ a {
   .card {
     width: 100%;
   }
+
+  /*footer*/
 }
